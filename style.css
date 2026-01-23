@@ -34,10 +34,27 @@ nav ul li a {
     color: black;
 }
 
-/* Main Container */
+/* Buttons */
+.theme-btn,
+.section-btn {
+    padding: 8px 16px;
+    background-color: #999;
+    border: 1px solid #333;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Dark mode Button */
+.theme-btn {
+    margin: 15px;
+    display: block;
+}
+
+/* Main */
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 /* Sections */
@@ -45,4 +62,42 @@ section {
     margin-bottom: 30px;
     padding: 20px;
     border: 1px solid #333;
+    position: relative; 
+}
+
+/* Hide buttons*/
+section .hide-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    border-top: 5px solid #333;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode section,
+.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav ul li a {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .theme-btn,
+.dark-mode .section-btn {
+    background-color: #333;
+    color: white;
 }
